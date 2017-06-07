@@ -9,7 +9,7 @@ class Dsock < Formula
 
   def install
     system "./autogen.sh"
-    system "./configure", "--prefix=#{prefix}"
+    system "./configure", "--prefix=#{prefix}", "--enable-tls"
     system "make"
     system "make", "check" if build.with?("test")
     system "make install"
