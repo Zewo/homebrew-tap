@@ -8,7 +8,6 @@ class Btls < Formula
   depends_on "libressl"
 
   def install
-    system "make"
     system "make", "install", "PREFIX=#{prefix}"
   end
 end
