@@ -10,5 +10,8 @@ class Btls < Formula
   def install
     system "make"
     system "make", "install", "PREFIX=#{prefix}"
+    system "mkdir pkgconfig"
+    system "mv btls.pc pkgconfig/btls.pc"
+    lib.install "pkgconfig"
   end
 end
