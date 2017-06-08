@@ -8,5 +8,7 @@ class Zewo < Formula
   depends_on "zewo/tap/libdill"
 
   def install
+      system "touch zewo"
+      bin.install "zewo"
   end
 end
