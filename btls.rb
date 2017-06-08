@@ -4,7 +4,7 @@ class Btls < Formula
   url "https://github.com/Zewo/btls.git", tag: version
   head "https://github.com/Zewo/btls"
 
-  depends_on "libdill"
+  depends_on "zewo/tap/libdill"
   depends_on "libressl"
 
   def install
