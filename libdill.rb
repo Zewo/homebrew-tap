@@ -1,6 +1,6 @@
 class Libdill < Formula
   homepage "https://zewo.io"
-  version "1.6"
+  version "1.6.2"
   url "https://github.com/Zewo/libdill.git", tag: version
   head "https://github.com/Zewo/libdill"
 
